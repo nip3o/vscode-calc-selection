@@ -69,7 +69,11 @@ function evaluateResult() {
   if (!editor) {
     return;
   }
-  if (!editor.selection || !editor.selection.isSingleLine) {
+  if (
+    !editor.selection ||
+    !editor.selection.isSingleLine ||
+    editor.selection.end.character - editor.selection.start.character > 1000
+  ) {
     return;
   }
   const text = editor.document
