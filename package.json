@@ -18,8 +18,12 @@
   "contributes": {
     "commands": [
       {
-        "command": "vscode-calc-selection.calculateAndAddComment",
-        "title": "Calculate selection and add as comment"
+        "command": "vscode-calc-selection.calculateAndReplace",
+        "title": "Calculate selection replace it with the result"
+      },
+      {
+        "command": "vscode-calc-selection.calculateAndCopy",
+        "title": "Calculate selection and copy result to clipboard"
       }
     ]
   },
